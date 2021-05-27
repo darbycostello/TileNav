@@ -12,7 +12,7 @@ TileNav is a replacement navigation system for UE4 which performs pathfinding ac
  - Supports *SimpleMoveToLocation* and other built-in pathfinding queries.
  - *ATileNavComponent* comprises a single static mesh which is used to create a grid of collision checks in order to build a tiled navigation section.
  - Adjustable collision normals for each TileNav component, allowing you to perform tile collision detections from different angles.
- - Variable grid size per TileNav component allows for different tile densities for instance, with a global multiplier built into the main navigation data actor.
+ - Variable grid size per TileNav component allows for different tile densities per instance, with a global multiplier built into the main navigation data actor.
  - Supports partial paths when pathfinding across multiple sections.
  - Path pruning using line-of-sight checks to produce most direct path (best used in walled or enclosed spaces).
  - A variety of options available for debug drawing and logging.
@@ -30,6 +30,6 @@ Multiple *TileNav* components can be added to a single actor, or added to separa
 
 ## Limitations and Future Work
 
- - Currently there is no solid support for dynamic navigation. It should be straightforward to add and should carry minimal performance penalty as only affected TileNav components can be rebuilt instead of a full rebuild. Coming soon.
+ - Currently there is no solid support for dynamic navigation. It should be straightforward to add and should carry minimal performance penalty as only affected *TileNav* components can be rebuilt instead of a full rebuild. Coming soon.
  - Collision traces are only performed with planar mapping, so they won't follow a curved surface, like a sphere. It would still be possible to build a sphere as separate interlinked components, each comprising a reasonably flat segment of the sphere mesh, then rotated appropriately to create the whole tiled surface. Obviously this would be easier with a quadrilateralized or 'cube sphere'. In future I may look at building in some additional projection methods.
  - There is no serialization of navigation data, so it must be rebuilt in editor or on begin play (performed automatically currently). I'll be getting to this when time allows.
