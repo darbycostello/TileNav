@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "TileNav",
+	"Description": "Tile-based navigation plugin, for pathfinding solutions across variously oriented floor meshes",
+	"Category": "AI",
+	"CreatedBy": "Darby Costello",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": 
+	[
+		{
+			"Name": "TileNav",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"WhitelistPlatforms": [ "Win64", "Win32" ]
+		}
+	]
+}
