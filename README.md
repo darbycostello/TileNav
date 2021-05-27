@@ -1,5 +1,7 @@
 # TileNav for Unreal Engine
 
+![TileNav banner image](https://user-images.githubusercontent.com/891532/119829126-d338a500-bef2-11eb-8d45-b4a05a9343a2.png)
+
 Example Project (UE 4.26): [Download](https://drive.google.com/drive/folders/1tL3tclTDTVTMkBJIxiOCiS8wIammDJh8?usp=sharing)
 
 TileNav is a replacement navigation system for UE4 which performs pathfinding across custom static mesh surfaces in any orientation. TileNav meshes are automatically linked together as sections when placed near one another, allowing the system to build a high-level connectivity graph for faster pathfinding across multiple meshes.
